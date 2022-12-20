@@ -1,0 +1,64 @@
+#current-time, .time {
+	width: 56px;
+	height: 26px;
+	line-height: 26px;
+
+	position: absolute;
+}
+
+#current-time {
+	top: -13px;
+	left: -71px;
+
+	background-color: rgba(255, 255, 255, .7);
+}
+
+.time, .start-time {
+	background-color: rgba(0, 0, 0, .2);
+	right: -71px;
+	top: calc(100% - 12px); /* -13px (height / 2) + 1px (item's 3px border top) */
+}
+
+#current-time:after, .time:after {
+	content: '';
+	position: absolute;
+	border: 13px solid transparent;
+}
+
+#current-time:after {
+	left: 100%;
+	border-left: 13px solid rgba(255, 255, 255, .7);
+}
+
+.time:after {
+	right: 100%;
+	border-right: 13px solid rgba(0, 0, 0, .2);
+}
+
+.start-time {
+	top: -13px;
+}
+
+.time-input {
+	box-sizing: border-box;
+
+	width: 85%;
+	height: 22px;
+
+	top: 3px;
+
+	margin: 0 auto;
+	border: 0;
+	outline: 0;
+}
+
+.time-input[readonly] {
+	background-color: transparent;
+}
+
+.time-input, #current-time, .time {
+	text-align: center;
+	font-family: "cambria", arial;
+	font-size: 18px;
+}
+

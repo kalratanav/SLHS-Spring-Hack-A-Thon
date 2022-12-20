@@ -1,0 +1,14 @@
+/** {
+	transition: .3s all;
+}*/
+
+button,
+input,
+.item,
+.overlay,
+.menu .colors div,
+.save-menu .move-save,
+.save-menu .controls-save
+{
+	//error in animation functionality
+}

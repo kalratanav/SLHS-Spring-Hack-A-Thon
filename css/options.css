@@ -1,0 +1,29 @@
+.options {
+	width: 100%;
+	height: 60px;
+}
+
+	.options button {
+		position: static;
+
+		float: left;
+		margin-right: 5%;
+
+		width: 49%;
+		height: 60px;
+	}
+
+	.options button i {
+		position: absolute;
+
+		left: 20px;
+		top: 20px;
+	}
+
+	.options button, .options label {
+		background-color: rgba(0, 0, 0, .2);
+	}
+
+		.options button:hover, .options label:hover {
+			background-color: rgba(0, 0, 0, .4);
+		}
